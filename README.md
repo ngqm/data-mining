@@ -19,7 +19,7 @@ The implementations are written from scratch in Python and Spark.
 Due to privacy issues, this repository only includes the final code
 and documentation without any commit history.
 
-## Install pre-requisites
+## Installing prerequisites
 
 Some of the implementations in this repository require
 Spark, which can be installed with the following steps:
@@ -257,10 +257,13 @@ Each line in the features file has the following format:
 Each line in the labels file contains a single label that is either 1 or -1.
 We provide a sample dataset in `data/svm-features.txt` and `data/svm-labels.txt`.
 
-The output contains a single line with the 10-fold cross validation 
-accuracy of the model:
+The output contains three lines with the 10-fold cross validation 
+accuracy of the model and the optimal C and eta parameters for learning
+the model.
 ```
 <Accuracy>
+<C>
+<eta>
 ```
 
 #### Example usage
@@ -270,6 +273,13 @@ In order to run the algorithm on our provided dataset, run the following command
 ```
 python code/svm.py data/svm-features.txt data/svm-labels.txt
 ```
+
+#### Notes
+
+For hyperparameter tuning, you can use the functions `svm.grid_search()`
+and plot the results using `svm.plot_grid_search()`:
+
+![grid_search](figures/grid_search_normal.png)
 
 ### 9. DGIM algorithm
 

@@ -179,24 +179,24 @@ def grid_search(X, Y):
     return best_c, best_eta, best_acc
 
 
-# def plot_grid_search():
-#     """
-#     Plot the grid search results.
-#     """
-#     import matplotlib.pyplot as plt
+def plot_grid_search():
+    """
+    Plot the grid search results.
+    """
+    import matplotlib.pyplot as plt
 
-#     # reads data
-#     data = np.loadtxt('grid_search_normal.txt')
-#     Cs, ETAs, ACCs = data[:, 0], data[:, 1], data[:, 2]
-#     ACCs = ACCs.reshape((5, 10))
-#     plt.imshow(ACCs)
-#     plt.xticks(np.arange(10), ETAs[:10], rotation=45)
-#     plt.yticks(np.arange(5), Cs[::10])
-#     plt.xlabel('eta')
-#     plt.ylabel('c')
-#     plt.title('Cross validation accuracy')
-#     plt.colorbar()
-#     plt.savefig('grid_search_normal.png')
+    # reads data
+    data = np.loadtxt('grid_search_normal.txt')
+    Cs, ETAs, ACCs = data[:, 0], data[:, 1], data[:, 2]
+    ACCs = ACCs.reshape((5, 10))
+    plt.imshow(ACCs)
+    plt.xticks(np.arange(10), ETAs[:10], rotation=45)
+    plt.yticks(np.arange(5), Cs[::10])
+    plt.xlabel('eta')
+    plt.ylabel('c')
+    plt.title('Cross validation accuracy')
+    plt.colorbar()
+    plt.savefig('grid_search_normal.png')
 
 
 if __name__=='__main__':
