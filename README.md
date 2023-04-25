@@ -12,6 +12,9 @@ several data mining algorithms, including:
 - [8. Gradient Descent SVM](#8-gradient-descent-svm)
 - [9. DGIM algorithm](#9-dgim-algorithm)
 
+Due to privacy issues, this repository only includes the final code
+and documentation without any commit history.
+
 ## Install pre-requisites
 
 Some of the implementations in this repository require
