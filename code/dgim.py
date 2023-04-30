@@ -1,9 +1,6 @@
 """
-Filename: hw4_2_p3.py
+Filename: dgim.py
 Author:   Quang Minh Nguyen
-
-Submission for Homework 4, Problem 2, using Python 3.
-References: MMDS book, Section 4.6
 """
 
 # file IO
